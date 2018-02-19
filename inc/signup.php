@@ -1,7 +1,7 @@
     <div class="col-md-6">
       <?php 
       
-      	include 'db.php';
+      	include '../inc/db.php';
 	include 'functions.php';
       
       if (isset($_GET['suc'])) {
