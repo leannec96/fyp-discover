@@ -1,28 +1,4 @@
-<?php
-    include "../init.php";
-  ?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/custom.css">
-<title>SignUp</title>
-<meta name="author" content="Jake Rocheleau">
-  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
-  <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="libs/js/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <?php
-    include "navbar.php";
-  ?>
-  
-  <div class="col-md-6">
+    <div class="col-md-6">
       <?php 
       if (isset($_GET['suc'])) {
         echo '<div class="alert alert-success">You registered successfully!</div>';
@@ -138,10 +114,3 @@
     </div>
     </br>
     </br>
-
-</body>
-
-
-</html>
-
-    

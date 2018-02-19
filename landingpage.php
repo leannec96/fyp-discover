@@ -1,7 +1,3 @@
-<?php
-include 'init.php';
-include 'inc/middleware.php';
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +9,6 @@ include 'inc/middleware.php';
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="libs/js/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -32,7 +24,7 @@ include 'inc/middleware.php';
         <a class="nav-link" href="landingpage.php">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="inc/signup.php">Register/Login</a>
+        <a class="nav-link" href="signup.php">Register/Login</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About</a>

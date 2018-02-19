@@ -1,9 +1,8 @@
 <?php  
   include 'init.php';
-  include 'inc/middleware.php';
   include 'inc/htmlstart.php';
-  include 'landingpage.php';
-  include 'inc/index.php';
+  include 'inc/navbar.php';
+  include 'inc/signup.php';
   include 'inc/htmlend.php';
 
  ?>
