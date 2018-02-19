@@ -24,7 +24,7 @@
         <a class="nav-link" href="landingpage.php">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="signup.php">Register/Login</a>
+        <a class="nav-link" href="inc/signup.php">Register/Login</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About</a>

@@ -39,7 +39,7 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="landingpage.php">Home </a>
+        <a class="nav-link" href="../landingpage.php">Home </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="signup.php">Register/Login</a>
@@ -57,7 +57,7 @@
             <h4>Register</h4>
           </div>
           <div class="panel-body">
-            <form action="accounts/signup.php" method="POST">
+            <form action="../accounts/signup.php" method="POST">
               <div class="form-group">
                 <label for="fullname">Full Name</label>
                 <input name="name" type="text" class="form-control" id="fullname" placeholder="Enter your FullName" required>
@@ -127,7 +127,7 @@
             <h4>Login</h4>
           </div>
           <div class="panel-body" >
-            <form action="accounts/login.php" method="POST">
+            <form action="../accounts/login.php" method="POST">
               
               <div class="form-group">
                 <label for="email">Email address</label>
