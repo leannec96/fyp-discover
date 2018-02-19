@@ -9,10 +9,10 @@
 	
 	
 	// //for heroku
-		$server = 'd4f9cda4@eu-cdbr-west-02.cleardb.net';
-	$username= 'b94bc67ee56667';
-	$password='d4f9cda4';
-	$db = 'heroku_09f39c0d0356122';
+		$server = 'eu-cdbr-west-02.cleardb.net';
+	$username= 'b63ef7fd9df32c:2e792dbb';
+	$password='2e792dbb';
+	$db = 'heroku_42aad86fb486075';
 
 	$conn = mysqli_connect($server,$username,$password,$db);
 	$conn->set_charset('utf8');
