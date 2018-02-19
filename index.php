@@ -1,4 +1,4 @@
 <?php  
-  include 'landingpage.php';
+  include_once('landingpage.php');
 
  ?>
