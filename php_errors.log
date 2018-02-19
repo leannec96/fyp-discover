@@ -118,3 +118,15 @@
 [19-Feb-2018 15:10:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
 [19-Feb-2018 15:10:39 UTC] PHP   2. include() /home/ubuntu/workspace/inc/signup.php:4
 [19-Feb-2018 15:10:39 UTC] PHP   3. include() /home/ubuntu/workspace/init.php:2
+[19-Feb-2018 15:32:49 UTC] PHP Warning:  include(init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/inc/signup.php on line 2
+[19-Feb-2018 15:32:49 UTC] PHP Stack trace:
+[19-Feb-2018 15:32:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[19-Feb-2018 15:32:49 UTC] PHP Warning:  include(): Failed opening 'init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/inc/signup.php on line 2
+[19-Feb-2018 15:32:49 UTC] PHP Stack trace:
+[19-Feb-2018 15:32:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[19-Feb-2018 15:32:49 UTC] PHP Warning:  include(inc/navbar.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/inc/signup.php on line 22
+[19-Feb-2018 15:32:49 UTC] PHP Stack trace:
+[19-Feb-2018 15:32:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[19-Feb-2018 15:32:49 UTC] PHP Warning:  include(): Failed opening 'inc/navbar.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/inc/signup.php on line 22
+[19-Feb-2018 15:32:49 UTC] PHP Stack trace:
+[19-Feb-2018 15:32:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
