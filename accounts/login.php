@@ -39,12 +39,12 @@
 		    	}
 		    	}
         }else{
-        	header('Location: ../signup.php?er1');exit();
+        	header('Location: ../inc/signup.php?er1');exit();
         }
       }else{
-      	header('Location: ../signup.php?er2');exit();
+      	header('Location: ../inc/signup.php?er2');exit();
       }
     }else{
-    	header('Location: ../signup.php?er3');exit();
+    	header('Location: ../inc/signup.php?er3');exit();
     }
   }
