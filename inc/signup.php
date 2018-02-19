@@ -1,5 +1,10 @@
     <div class="col-md-6">
       <?php 
+      
+      	include_once('db.php');
+	include_once('functions.php'); 
+	
+	
       if (isset($_GET['suc'])) {
         echo '<div class="alert alert-success">You registered successfully!</div>';
       }
