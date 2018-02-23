@@ -49,11 +49,8 @@ require_once 'inc/db.php';
       <li class="nav-item">
         <a class="nav-link" href="conversations.php">Conversations</a>
       </li>
-      <!--<li class="nav-item">-->
-      <!--  <a class="nav-link" href="maps.html">Map</a>-->
-      <!--</li>-->
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="landingpage.php">Logout</a></a>
@@ -82,7 +79,7 @@ require_once 'inc/db.php';
       </nav>
       
       
-      <section id="settings" class="hidden">
+      <section id="settings">
         <p>Edit your user settings:</p>
         
         <p class="setting"><span>E-mail Address</span><?php echo $_SESSION["email"]; ?></p>

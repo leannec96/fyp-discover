@@ -35,7 +35,7 @@
       <!--  <a class="nav-link" href="map.php">Map</a>-->
       <!--</li>-->
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="landingpage.php">Logout</a></a>

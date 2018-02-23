@@ -130,3 +130,12 @@
 [19-Feb-2018 15:32:49 UTC] PHP Warning:  include(): Failed opening 'inc/navbar.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/inc/signup.php on line 22
 [19-Feb-2018 15:32:49 UTC] PHP Stack trace:
 [19-Feb-2018 15:32:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[20-Feb-2018 11:32:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'b63ef7fd9df32c:2e792dbb'@'ip-10-0-11-114.eu-west-1.compute.internal' (using password: YES) in /home/ubuntu/workspace/inc/db.php on line 17
+[20-Feb-2018 11:32:12 UTC] PHP Stack trace:
+[20-Feb-2018 11:32:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[20-Feb-2018 11:32:12 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[20-Feb-2018 11:32:12 UTC] PHP   3. mysqli_connect() /home/ubuntu/workspace/inc/db.php:17
+[20-Feb-2018 11:32:12 UTC] PHP Fatal error:  Call to a member function set_charset() on a non-object in /home/ubuntu/workspace/inc/db.php on line 18
+[20-Feb-2018 11:32:12 UTC] PHP Stack trace:
+[20-Feb-2018 11:32:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[20-Feb-2018 11:32:12 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4

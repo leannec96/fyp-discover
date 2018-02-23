@@ -35,7 +35,7 @@ function filterTable($query)
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
-<title>Welcome to Discover</title>
+<title>Search & Chat</title>
 <meta name="author" content="Jake Rocheleau">
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -67,7 +67,7 @@ function filterTable($query)
       <!--  <a class="nav-link" href="maps.html">Map</a>-->
       <!--</li>-->
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="landingpage.php">Logout</a></a>
@@ -86,9 +86,10 @@ function filterTable($query)
   </br>
   
  
+      
         <form action="searchdb.php" method="post">
-             <h3> Click on a name to chat to that person.</h3>
-            <select style="position:absolute;:0px;center:0px;width:500px; height:25px;line-height:20px;margin:0;padding:0;"
+             <h3> Select an interest & the type of student you want to chat with!</h3>
+            <select name="interest" style="position:absolute;:0px;center:0px;width:500px; height:25px;line-height:20px;margin:0;padding:0;"
           onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
                  <option>Select an interest</option>
     <option value="Computers">Computers</option>
@@ -102,19 +103,38 @@ function filterTable($query)
     <option value="Languages">Languages</option>
                 
             </select>
+            
+  
             </br>
-             <select style="position:absolute;:0px;center:0px;width:500px; height:25px;line-height:20px;margin:0;padding:0;"
-          onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
-                 <option>Select the type of student you want to chat to</option>
-    <option value="College">College</option>
-    <option value="School">School</option>
+          <!--   <select style="position:absolute;:0px;center:0px;width:500px; height:25px;line-height:20px;margin:0;padding:0;"-->
+          <!--onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">-->
+   
+       
+            <div class="form-group" class="radio">
+			<label for="input1" class="col-sm-2 control-label">Type of student</label>
+			<div class="col-sm-10">
+			  <label>
+			    <input type="radio" name="type" id="optionsRadios1" value="school" checked> School
+			  </label>
+			  	  <label>
+			    <input type="radio" name="type" id="optionsRadios1" value="college"> College
+			  </label>
+			</div>
+			</div>
+			
+
+   
+    <!--             <option>Select the type of student you want to chat to</option>-->
+    <!--<option value="College">College</option>-->
+    <!--<option value="School">School</option>-->
  
                 
-            </select>
+    <!--        </select>-->
             
             <input type="hidden" name="valueToSearch" id="displayValue"  placeholder="Value To Search" onfocus="this.select()"><br><br>
-            <button type="submit" name="search" value="Filter" id="idValue" class="btn btn-success">Search</button><br><br>
+            <button type="submit" name="search" value="Filter" id="idValue" id="optionsRadios1" class="btn btn-success">Search</button><br><br>
           
+            <p>Not sure of what your interest is? Click <a href="test.php">here </a>to take a quiz to discover some interests!</span></p>
            
              <table class="table table-hover">
   <thead>
@@ -123,14 +143,16 @@ function filterTable($query)
       <th scope="col">Student Name</th>
       <th scope="col">Type of Student</th>
      <th scope="col">View Student on Map of UCC</th>
+      <th scope="col">View interest on UCC Website</th>
     </tr>
   </thead>
   <tbody>
       <tr class="table-success">
-      <th scope="row">Click on a name to chat to that person</th>
+      <th scope="row"></th>
                     <td><?php echo $row['interest'];?></td>
                     <td><a href="chat.php?id=<?= $row['id']?>"><?= $row['name'];?></a></td>
                     <td><?php echo $row['type'];?></td>
+                     <td><?php echo $row[''];?></td>
                 </tr>
     </tr>
     </tbody>
@@ -142,7 +164,10 @@ function filterTable($query)
                     <td><?php echo $row['interest'];?></td>
                     <td><a href="chat.php?id=<?= $row['id']?>"><?= $row['name'];?></a></td>
                     <td><?php echo $row['type'];?></td>
-                     <td><a href="https://final-year-project-leannecassidy96.c9users.io/maps.html";?>View on map</a></td>
+                     <!--//<td><a href="https://final-year-project-leannecassidy96.c9users.io/maps.html";?>View on map</a></td>-->
+                     <td><a href="<?= $row['url']?>">View on map</a></td>
+                      <td><a href="<?= $row['faculty']?>">View on UCC</a></td>
+                   
                 </tr>
                 <?php endwhile;?>
 </table> 

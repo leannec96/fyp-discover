@@ -53,7 +53,7 @@ require_once 'inc/db.php';
       <!--  <a class="nav-link" href="maps.html">Map</a>-->
       <!--</li>-->
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="landingpage.php">Logout</a></a>
@@ -67,7 +67,8 @@ require_once 'inc/db.php';
   </div>
 </nav>
 <center><p> Below are a number of links to useful sites that will provide you with more information regarding college.</p>
-<p> You will be redirected to a new tab once you click on the link.</p></center>
+<p> You will be redirected to a new tab once you click on the link.</p>
+<p>If you would like to download Maps of the UCC Campus, click <a href="https://www.ucc.ie/en/discover/visit/maps/">here</a></p></center>
 <a href="https://www.ucc.ie/">
   <img src="images/ucc.jpg" alt="HTML tutorial" style="width:400px;height:250px;border:100;">
 </a>
@@ -79,6 +80,7 @@ require_once 'inc/db.php';
 <a href="https://careersportal.ie/ed_training/course_search.php?client_id=67&ed_sub_cat_id=48#.WodlpoPFLIU">
   <img src="images/careersportal.png" alt="HTML tutorial" style="width:400px;height:150px;border:100;">
 </a>
+
 
 
 
