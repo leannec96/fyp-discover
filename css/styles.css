@@ -269,6 +269,13 @@ a:hover { text-decoration: underline; }
   border: 1px solid #c9d8b8;
 }
 
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+#full-size{
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
 #friendslist li a img { float: left; margin-right: 5px; }
 
 /** clearfix **/

@@ -6,17 +6,18 @@ require_once 'inc/db.php';
 <html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<title>What's your interest? Quiz</title>
-	
-	
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<title>Quiz</title>
+<meta name="author" content="Jake Rocheleau">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-
+</head>
 
 </head>
 
@@ -61,6 +62,7 @@ require_once 'inc/db.php';
     </ul>
   </div>
 </nav>
+
 
 
 	<div id="page-wrap">
@@ -220,6 +222,7 @@ require_once 'inc/db.php';
 		
 		</form>
     </div>
+
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 	<?php

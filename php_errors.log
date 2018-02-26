@@ -139,3 +139,43 @@
 [20-Feb-2018 11:32:12 UTC] PHP Stack trace:
 [20-Feb-2018 11:32:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
 [20-Feb-2018 11:32:12 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[23-Feb-2018 21:41:25 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/accounts/signup.php on line 14
+[23-Feb-2018 21:46:05 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/accounts/signup.php on line 14
+[23-Feb-2018 21:55:49 UTC] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/ubuntu/workspace/accounts/signup.php on line 14
+[23-Feb-2018 21:55:49 UTC] PHP Stack trace:
+[23-Feb-2018 21:55:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/signup.php:0
+[23-Feb-2018 21:59:28 UTC] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/ubuntu/workspace/accounts/signup.php on line 14
+[23-Feb-2018 21:59:28 UTC] PHP Stack trace:
+[23-Feb-2018 21:59:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/signup.php:0
+[23-Feb-2018 22:03:27 UTC] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/ubuntu/workspace/accounts/signup.php on line 14
+[23-Feb-2018 22:03:27 UTC] PHP Stack trace:
+[23-Feb-2018 22:03:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/signup.php:0
+[23-Feb-2018 22:08:07 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/accounts/signup.php on line 16
+[23-Feb-2018 22:17:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/inc/signup.php:123) in /home/ubuntu/workspace/inc/signup.php on line 125
+[23-Feb-2018 22:17:42 UTC] PHP Stack trace:
+[23-Feb-2018 22:17:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[23-Feb-2018 22:17:42 UTC] PHP   2. header() /home/ubuntu/workspace/inc/signup.php:125
+[23-Feb-2018 22:17:42 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in /home/ubuntu/workspace/inc/signup.php on line 131
+[23-Feb-2018 22:17:42 UTC] PHP Stack trace:
+[23-Feb-2018 22:17:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[23-Feb-2018 22:17:42 UTC] PHP   2. mysql_connect() /home/ubuntu/workspace/inc/signup.php:131
+[23-Feb-2018 22:17:42 UTC] PHP Warning:  mysql_select_db(): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/inc/signup.php on line 133
+[23-Feb-2018 22:17:42 UTC] PHP Stack trace:
+[23-Feb-2018 22:17:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[23-Feb-2018 22:17:42 UTC] PHP   2. mysql_select_db() /home/ubuntu/workspace/inc/signup.php:133
+[23-Feb-2018 22:17:42 UTC] PHP Warning:  mysql_select_db(): A link to the server could not be established in /home/ubuntu/workspace/inc/signup.php on line 133
+[23-Feb-2018 22:17:42 UTC] PHP Stack trace:
+[23-Feb-2018 22:17:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[23-Feb-2018 22:17:42 UTC] PHP   2. mysql_select_db() /home/ubuntu/workspace/inc/signup.php:133
+[23-Feb-2018 22:17:42 UTC] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/inc/signup.php on line 139
+[23-Feb-2018 22:17:42 UTC] PHP Stack trace:
+[23-Feb-2018 22:17:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[23-Feb-2018 22:17:42 UTC] PHP   2. mysql_query() /home/ubuntu/workspace/inc/signup.php:139
+[23-Feb-2018 22:17:42 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/ubuntu/workspace/inc/signup.php on line 139
+[23-Feb-2018 22:17:42 UTC] PHP Stack trace:
+[23-Feb-2018 22:17:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[23-Feb-2018 22:17:42 UTC] PHP   2. mysql_query() /home/ubuntu/workspace/inc/signup.php:139
+[23-Feb-2018 22:17:42 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/inc/signup.php on line 141
+[23-Feb-2018 22:17:42 UTC] PHP Stack trace:
+[23-Feb-2018 22:17:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/inc/signup.php:0
+[23-Feb-2018 22:17:42 UTC] PHP   2. mysql_fetch_array() /home/ubuntu/workspace/inc/signup.php:141

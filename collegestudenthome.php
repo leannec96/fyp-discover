@@ -72,7 +72,8 @@ require_once 'inc/db.php';
   
   <div id="w">
     <div id="content" class="clearfix">
-      <div id="userphoto"><img src="images/avatar.png" alt="default avatar"></div>
+      <div id="userphoto"><img src="images/leanne.png" width="120" height="120" alt="default avatar"></div>
+       <img src="<?= $_SESSION['avatar'] ?>"><br />
       <h1><?php echo $_SESSION["name"]; ?></h1>
 
       <nav id="profiletabs">
@@ -82,7 +83,7 @@ require_once 'inc/db.php';
       </nav>
       
       
-      <section id="settings" class="hidden">
+      <section id="settings">
         <p>Edit your user settings:</p>
         
         <p class="setting"><span>E-mail Address</span><?php echo $_SESSION["email"]; ?></p>
