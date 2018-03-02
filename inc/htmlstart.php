@@ -11,7 +11,7 @@
     <!--<link href="libs/css/bootstrap.min.css" rel="stylesheet">-->
     <!--<link href="libs/css/style.css" rel="stylesheet">-->
     
-    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

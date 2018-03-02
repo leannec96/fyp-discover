@@ -13,32 +13,77 @@
 <title>Welcome to Discover</title>
 <meta name="author" content="Jake Rocheleau">
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
-  <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  
+  <!-- Nav bar -->
+     <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Navbar With Icons</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i">
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/animate.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
 <body>
-
- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Discover</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="../landingpage.php">Home </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="signup.php">Register/Login</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<!-- Top menu -->
+		<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Discover</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="../index.html">
+								<i class="fa fa-home"></i> <span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="inc/signup.php">
+								<i class="fa fa-plus-square"></i> <span>Register/Login</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    
       <div class="signup">
+        </br>
+     </br>
+     </br>
+     </br>
+     </br>
+    
         <div class="panel panel-primary" align="middle">
           <div class="panel-heading" align="middle">
-            </br>
+         
             <h4>Register</h4>
           </div>
           <div class="panel-body">
@@ -105,10 +150,15 @@
     </div>
    <div class="col-xs-6 col-md-13">
       <div class="signin">
+        </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            
+            
         <div class="panel panel-primary" align="middle">
           <div class="panel-heading" align="middle">
-            </br>
-            </br>
             <h4>Login</h4>
           </div>
           <div class="panel-body" >
