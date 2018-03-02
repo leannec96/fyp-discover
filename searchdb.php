@@ -18,55 +18,51 @@ require_once 'inc/db.php';
         <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <link rel="icon" href="images/college.png">
+          
+   <style>
+       body { 
+           background-image: url("images/capture1.png");
+           background-size: cover;
+       }
+       
+   </style>
     </head>
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="landingpage.php">Discover</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
-                aria-expanded="false" aria-label="Toggle navigation" style="">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <a class="navbar-brand" href="landingpage.php">Discover</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                    <!--<li class="nav-item ">-->
-                    <!--  <a class="nav-link" href="landingpage.php?logout">Home </a>-->
-                    <!--</li>-->
-                    <li class="nav-item ">
-                        <a class="nav-link" href="studenthome.php">My Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="searchdb.php">Search & Chat</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="conversations.php">Conversations</a>
-                    </li>
-                    <!--<li class="nav-item">-->
-                    <!--  <a class="nav-link" href="maps.html">Map</a>-->
-                    <!--</li>-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="landingpage.php">Logout</a>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-user"></span>
-                            <font color="#ffffff">&nbsp;Hi'
-                                <?php echo $_SESSION["email"]; ?>&nbsp;</font>
-                            <span class="caret"></span>
-                        </a>
-                    </li>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="logout.php?logout">
-                                <span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a>
-                    </ul>
-            </div>
-        </nav>
+<div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="studenthome.php">My Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="searchdb.php">Search & Chat</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="conversations.php">Conversations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="test.php">Discover Interests Here</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="landingpage.php">Logout</a></a>
+      </li>
+      <li>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+     <span class="glyphicon glyphicon-user"></span><font color="#ffffff">&nbsp;Hi' <?php echo $_SESSION["email"]; ?>&nbsp;</font><span class="caret"></span></a></li>
+              <ul class="dropdown-menu">
+                <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a>
+    </ul>
+  </div>
+</nav>
 
         <div id="w">
             <div id="content" class="clearfix">
@@ -107,7 +103,7 @@ require_once 'inc/db.php';
                     <thead>
                         <tr>
                             <th scope="col">Interest</th>
-                            <th scope="col">Student Name</th>
+                            <th scope="col">Click on a Student Name to Chat to them</th>
                             <th scope="col">Type of Student</th>
                             <th scope="col">View Student on Map of UCC</th>
                             <th scope="col">View interest on UCC Website</th>

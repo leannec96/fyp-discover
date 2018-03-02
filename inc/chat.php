@@ -24,6 +24,14 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <link rel="icon" href="images/college.png">
+     <style>
+       body { 
+           background-image: url("images/capture1.png");
+           background-size: cover;
+       }
+       
+   </style>
 </head>
 <body>
 
@@ -37,9 +45,6 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="landingpage.php?logout">Home </a>
-      </li>
-      <li class="nav-item ">
         <a class="nav-link" href="studenthome.php">My Profile</a>
       </li>
       <li class="nav-item">
@@ -49,13 +54,13 @@
         <a class="nav-link" href="conversations.php">Conversations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="map.php">Map</a>
+        <a class="nav-link" href="test.php">Discover Interests Here</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="accounts/logout.php">Logout</a></a>
+        <a class="nav-link" href="landingpage.php">Logout</a></a>
       </li>
       <li>
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

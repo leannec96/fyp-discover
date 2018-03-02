@@ -2,17 +2,6 @@
  ob_start();
  session_start();
 require_once 'inc/db.php';
- 
-// // if session is not set this will redirect to login page
-// if( !isset($_SESSION['user']) ) {
-//   header("Location: home.php");
-//   exit;
-// }
-// // select loggedin users detail
-// $res=mysql_query("SELECT * FROM users WHERE id=".$_SESSION['user']);
-// $userRow=mysql_fetch_array($res);
-
- 
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,6 +14,7 @@ require_once 'inc/db.php';
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <link rel="icon" href="images/college.png">
 </head>
 <body>
 
@@ -37,9 +27,6 @@ require_once 'inc/db.php';
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
-      <!--<li class="nav-item ">-->
-      <!--  <a class="nav-link" href="landingpage.php">Home </a>-->
-      <!--</li>-->
       <li class="nav-item ">
         <a class="nav-link" href="studenthome.php">My Profile</a>
       </li>
@@ -50,19 +37,14 @@ require_once 'inc/db.php';
         <a class="nav-link" href="conversations.php">Conversations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="test.php">Quiz</a>
+        <a class="nav-link" href="test.php">Discover Interests Here</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="landingpage.php">Logout</a></a>
+        <a class="nav-link" href="landingpage.php">Logout</a>
       </li>
-      <li>
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-     <span class="glyphicon glyphicon-user"></span><font color="#ffffff">&nbsp;Hi' <?php echo $_SESSION["email"]; ?>&nbsp;</font><span class="caret"></span></a></li>
-              <ul class="dropdown-menu">
-                <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a>
     </ul>
   </div>
 </nav>

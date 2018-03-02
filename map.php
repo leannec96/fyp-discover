@@ -3,16 +3,6 @@
  session_start();
 require_once 'inc/db.php';
  
-// // if session is not set this will redirect to login page
-// if( !isset($_SESSION['user']) ) {
-//   header("Location: home.php");
-//   exit;
-// }
-// // select loggedin users detail
-// $res=mysql_query("SELECT * FROM users WHERE id=".$_SESSION['user']);
-// $userRow=mysql_fetch_array($res);
-
- 
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,6 +15,7 @@ require_once 'inc/db.php';
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <link rel="icon" href="images/college.png">
 </head>
 <body>
 

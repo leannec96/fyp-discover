@@ -7,21 +7,21 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
-  width: 600px;
+  width: 100%;
 }
 body { 
   background: #020305 url('../imgs/bg-texture.jpg') center center no-repeat;
   color: #fff; 
   font-family: 'Droid Serif', Times, serif; 
   font-size: 14px;
-  max-width: 600px;
+  max-width: 100%;
 }
 #page-wrap { 
   height: 450px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  width: 600px;
+  width: 100%;
 }
 h1 { 
   letter-spacing: 3px;
@@ -179,10 +179,10 @@ h1 {
   width: 552px;
   z-index: -1;
 }
-.index .quiz-overlay, .quiz-overlay { 
-  background: rgba(226,255,246,.52) url(../imgs/horns-up.png); 
-  background-size: cover;
-}
+/*.index .quiz-overlay, .quiz-overlay { */
+/*  background: rgba(226,255,246,.52) url(../images/discover.png); */
+/*  background-position: center;*/
+/*}*/
 .index .quiz-overlay {
   left: 24px;
 }
@@ -340,7 +340,7 @@ textarea.c-p {
 	background-color: transparent;
 	margin: 42px 0 0 65px;
   max-height: 325px; /* Added */
-	position: relative;
+	background-position: center;
 	width: 510px;
 }
 .results-overlay .quiz-overlay {
@@ -362,15 +362,19 @@ textarea.c-p {
   height: 325px;
 }
 .priest {
-  background: url(../imgs/priest-bg.jpg) no-repeat;
+  background: url(../images/health.jpg) no-repeat;
+  background-position: center;
 }
 .megadeth {
-  background: url(../imgs/megadeth-bg.jpg) no-repeat;
+  background: url(../images/business1.jpg) no-repeat;
+  background-position: center;
 }
 .maiden {
-  background: url(../imgs/maiden-bg.jpg) no-repeat;
+  background: url(../images/eng&his.jpg) no-repeat;
+   background-position: center;
 }
 .dio {
-  background: url(../imgs/dio-bg.jpg) no-repeat;
+  background: url(../images/mcs.jpg) no-repeat;
+   background-position: center;
 }
 /* ------ \m/ ------ */

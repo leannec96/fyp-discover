@@ -6,17 +6,27 @@ require_once 'inc/db.php';
 <html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<title>What's your interest? Quiz</title>
-	
-	
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<title>Quiz</title>
+<meta name="author" content="Jake Rocheleau">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-
+   <link rel="icon" href="images/college.png">
+     
+   <style>
+       body { 
+           background-image: url("images/capture1.png");
+           background-size: cover;
+       }
+       
+   </style>
+</head>
 
 </head>
 
@@ -29,9 +39,6 @@ require_once 'inc/db.php';
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
-      <!--<li class="nav-item ">-->
-      <!--  <a class="nav-link" href="landingpage.php">Home </a>-->
-      <!--</li>-->
       <li class="nav-item ">
         <a class="nav-link" href="studenthome.php">My Profile</a>
       </li>
@@ -42,13 +49,10 @@ require_once 'inc/db.php';
         <a class="nav-link" href="conversations.php">Conversations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="metal-quiz-master/test.php">Discover Interests Here</a>
+        <a class="nav-link" href="test.php">Discover Interests Here</a>
       </li>
-      <!--<li class="nav-item">-->
-      <!--  <a class="nav-link" href="maps.html">Map</a>-->
-      <!--</li>-->
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="landingpage.php">Logout</a></a>
@@ -62,6 +66,8 @@ require_once 'inc/db.php';
   </div>
 </nav>
 
+ 
+                <center>
 
 	<div id="page-wrap">
 
@@ -78,7 +84,7 @@ require_once 'inc/db.php';
 	         * You need the name value to store answers for grading.
 	         * In this demo, the frwd class controls question advancement through jQuery.
 	         */
-            ?>    
+            ?>       
             <ul id="test-questions">
                 
                 <li>

@@ -17,6 +17,15 @@ require_once 'inc/db.php';
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <link rel="icon" href="images/college.png">
+     
+   <style>
+       body { 
+           background-image: url("images/capture1.png");
+           background-size: cover;
+       }
+       
+   </style>
 </head>
 
 </head>
@@ -30,9 +39,6 @@ require_once 'inc/db.php';
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
-      <!--<li class="nav-item ">-->
-      <!--  <a class="nav-link" href="landingpage.php">Home </a>-->
-      <!--</li>-->
       <li class="nav-item ">
         <a class="nav-link" href="studenthome.php">My Profile</a>
       </li>
@@ -43,13 +49,10 @@ require_once 'inc/db.php';
         <a class="nav-link" href="conversations.php">Conversations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="metal-quiz-master/test.php">Discover Interests Here</a>
+        <a class="nav-link" href="test.php">Discover Interests Here</a>
       </li>
-      <!--<li class="nav-item">-->
-      <!--  <a class="nav-link" href="maps.html">Map</a>-->
-      <!--</li>-->
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="landingpage.php">Logout</a></a>
@@ -63,7 +66,8 @@ require_once 'inc/db.php';
   </div>
 </nav>
 
-
+ 
+                <center>
 
 	<div id="page-wrap">
 
@@ -80,10 +84,14 @@ require_once 'inc/db.php';
 	         * You need the name value to store answers for grading.
 	         * In this demo, the frwd class controls question advancement through jQuery.
 	         */
-            ?>    
+            ?> 
+            
+             <div id="w">
+    <div id="content" class="clearfix">
             <ul id="test-questions">
-                
+               
                 <li>
+                    
                     <div class="quiz-overlay"></div>
                     <h3>Being around a group of people gives me energy?</h3>
                     
@@ -218,12 +226,15 @@ require_once 'inc/db.php';
                     <h3 class="anticipate">Now it&#8217;s time to see your results...</h3>
                     <input type="submit" value="Submit Quiz" id="submit-quiz" />
                 </li>
+                
             </ul>
 		
 		</form>
+		</div>
+		</div>
     </div>
 
-
+</center>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 	<?php
 	/**

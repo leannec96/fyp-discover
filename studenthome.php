@@ -3,16 +3,6 @@
  session_start();
 require_once 'inc/db.php';
  
-// // if session is not set this will redirect to login page
-// if( !isset($_SESSION['user']) ) {
-//   header("Location: home.php");
-//   exit;
-// }
-// // select loggedin users detail
-// $res=mysql_query("SELECT * FROM users WHERE id=".$_SESSION['user']);
-// $userRow=mysql_fetch_array($res);
-
- 
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,11 +10,20 @@ require_once 'inc/db.php';
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
-<title>Welcome to Discover</title>
+<title>Student Profile</title>
 <meta name="author" content="Jake Rocheleau">
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <link rel="icon" href="images/college.png">
+  
+   <style>
+       body { 
+           background-image: url("images/capture1.png");
+           background-size: cover;
+       }
+       
+   </style>
 </head>
 <body>
 
@@ -37,9 +36,6 @@ require_once 'inc/db.php';
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
-      <!--<li class="nav-item ">-->
-      <!--  <a class="nav-link" href="landingpage.php">Home </a>-->
-      <!--</li>-->
       <li class="nav-item ">
         <a class="nav-link" href="studenthome.php">My Profile</a>
       </li>
@@ -48,6 +44,9 @@ require_once 'inc/db.php';
       </li>
       <li class="nav-item">
         <a class="nav-link" href="conversations.php">Conversations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="test.php">Discover Interests Here</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="usefulinfo.php">Useful Links</a>
@@ -69,7 +68,7 @@ require_once 'inc/db.php';
   
   <div id="w">
     <div id="content" class="clearfix">
-      <div id="userphoto"><img src="images/chloe.jpg" width="120" height="120" alt="default avatar"></div>
+      <div id="userphoto"><img src="images/school.png" width="120" height="120" alt="default avatar"></div>
       <h1><?php echo $_SESSION["name"]; ?></h1>
 
       <nav id="profiletabs">

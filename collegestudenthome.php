@@ -1,19 +1,11 @@
 <?php
- ob_start();
- session_start();
-require_once 'inc/db.php';
- 
-// // if session is not set this will redirect to login page
-// if( !isset($_SESSION['user']) ) {
-//   header("Location: home.php");
-//   exit;
-// }
-// // select loggedin users detail
-// $res=mysql_query("SELECT * FROM users WHERE id=".$_SESSION['user']);
-// $userRow=mysql_fetch_array($res);
 
- 
+  ob_start();
+  session_start();
+  require_once 'inc/db.php';
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,10 +17,11 @@ require_once 'inc/db.php';
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <link rel="icon" href="images/college.png">
 </head>
 <body>
 
-
+ <!--Navigation Bar-->
  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="landingpage.php">Discover</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
@@ -37,23 +30,14 @@ require_once 'inc/db.php';
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
-      <!--<li class="nav-item ">-->
-      <!--  <a class="nav-link" href="landingpage.php">Home </a>-->
-      <!--</li>-->
       <li class="nav-item ">
         <a class="nav-link" href="collegestudenthome.php">My Profile</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="searchdb.php">Search & Chat</a>
+        <a class="nav-link" href="collegeconvo.php">Conversations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="conversations.php">Conversations</a>
-      </li>
-      <!--<li class="nav-item">-->
-      <!--  <a class="nav-link" href="maps.html">Map</a>-->
-      <!--</li>-->
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="usefulinfo.php">Useful Links</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="landingpage.php">Logout</a></a>
@@ -66,15 +50,13 @@ require_once 'inc/db.php';
     </ul>
   </div>
 </nav>
-
-
-     
   
+  <!--User Profile Information-->
   <div id="w">
     <div id="content" class="clearfix">
-      <div id="userphoto"><img src="images/leanne.png" width="120" height="120" alt="default avatar"></div>
+      <div id="userphoto"><img src="images/college.png" width="120" height="120" alt="default avatar"></div>
        <img src="<?= $_SESSION['avatar'] ?>"><br />
-      <h1><?php echo $_SESSION["name"]; ?></h1>
+      <h1><?php echo $_SESSION["name"]; ?>-<?php echo $_SESSION["type"]; ?></h1>
 
       <nav id="profiletabs">
         <ul class="clearfix">

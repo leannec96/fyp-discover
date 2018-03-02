@@ -1,22 +1,10 @@
-    <div class="col-md-6">
+<div class="col-xs-6 col-md-13">
       <?php 
       if (isset($_GET['suc'])) {
         echo '<div class="alert alert-success">You registered successfully!</div>';
       }
-      
-  //     if( $count == 1 && $row['password']==$pass && $row['type']=='school') {
-  //   $_SESSION['id'] = $row['id'];
-  //   header("Location: schoolstudenthome.php");
-  // } else if ( $count == 1 && $row['password']==$pass && $row['type']=='college') {
-  //   $_SESSION['id'] = $row['id'];
-  //   header("Location: collegestudenthome.php");
-  // } else {
-  //   $errMSG = "Incorrect Credentials, Try again...";
-  // }
-    
-  
-      ?>
-      <!DOCTYPE html>
+    ?>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -43,9 +31,6 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="signup.php">Register/Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
       </li>
     </ul>
   </div>
@@ -118,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+   <div class="col-xs-6 col-md-13">
       <div class="signin">
         <div class="panel panel-primary" align="middle">
           <div class="panel-heading" align="middle">

@@ -11,6 +11,15 @@
    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <link rel="icon" href="images/college.png">
+     
+   <style>
+       body { 
+           background-image: url("images/capture1.png");
+           background-size: cover;
+       }
+       
+   </style>
 </head>
 
 <body>
@@ -35,7 +44,7 @@
         <a class="nav-link" href="conversations.php">Conversations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="metal-quiz-master/test.php">Discover Interests Here</a>
+        <a class="nav-link" href="test.php">Discover Interests Here</a>
       </li>
       <!--<li class="nav-item">-->
       <!--  <a class="nav-link" href="maps.html">Map</a>-->
@@ -122,7 +131,7 @@
 
             ?>
 
-            <div class="results-overlay">
+            <center><div class="results-overlay">
             	
             <?php 
             /**
@@ -133,22 +142,23 @@
 
             <?php
             if ($totalA > $totalB && $totalA > $totalC && $totalA > $totalD) {
-                  echo '<div class="quiz-overlay result priest"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Health</p><p class="score-details">You should select Health from the box and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result priest"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Health</p><p>You should select Health from the box and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
             }
             elseif ($totalB > $totalA && $totalB > $totalC && $totalB > $totalD) {
-                  echo '<div class="quiz-overlay result megadeth"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Business</p><p class="score-details">You should select Business from the box and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result megadeth"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Business</p><p>You should select Business from the box and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
             }
             elseif ($totalC > $totalA && $totalC > $totalB && $totalC > $totalD) {
-                  echo '<div class="quiz-overlay result maiden"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">English & History</p><p class="score-details">You should select English or History from the box and chat to someone in those departments! Good Luck!<p></p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result maiden"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">English & History</p><p>You should select English or History from the box and chat to someone in those departments! Good Luck!<p></p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
             }
             elseif ($totalD > $totalA && $totalD > $totalB && $totalD > $totalC) {
-                  echo '<div class="quiz-overlay result dio"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Computers, Maths & Science</p><p class="score-details">You should select Computers, maths or science from the box and chat to someone in those departments! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result dio"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Computers, Maths & Science</p><p>You should select Computers, maths or science from the box and chat to someone in those departments! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
             }
             
         ?>     
                 </div>
             </div>
 	</div>
+	</center>
   
   <script type="text/javascript">
       function modalshow(){
