@@ -93,7 +93,7 @@ require_once 'inc/db.php';
   
   <div id="w">
     <div id="content" class="clearfix">
-      <div id="userphoto"><img src="images/school.png" width="120" height="120" alt="default avatar"></div>
+      <div id="userphoto"><img src="images/college.png" width="120" height="120" alt="default avatar"></div>
       <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
 
       <nav id="profiletabs">
