@@ -64,7 +64,7 @@ require_once 'inc/db.php';
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Discover</a>
+					<a href="index.html"><img src="../images/Discov (6).png" alt="Homepage" height="75" width="200"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">

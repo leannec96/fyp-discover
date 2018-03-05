@@ -66,7 +66,7 @@ require_once 'inc/db.php';
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Discover</a>
+						<a href="index.html"><img src="../images/Discov (6).png" alt="Homepage" height="75" width="200"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -121,7 +121,7 @@ while ($rows= mysqli_fetch_assoc($run)) {
 		<div class="panel-body">
 			<div class="text-center">
 				<img src="http://www.gravatar.com/avatar/'.md5($email).'fs=150" height="30" width="30" class="img-circle">
-				<a  href="chat.php?id='.$id.'" class="btn btn-success">Chat Now</a>
+				<a  href="cchat.php?id='.$id.'" class="btn btn-success">Chat Now</a>
 			</div>
 			
 		</div>

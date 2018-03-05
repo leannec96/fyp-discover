@@ -62,7 +62,7 @@ require_once 'inc/db.php';
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Discover</a>
+					<a href="index.html"><img src="../images/Discov (6).png" alt="Homepage" height="75" width="200"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -127,7 +127,8 @@ If you would like to download Maps of the UCC Campus, click <a href="https://www
     <script src="assets/jquery-1.11.3-jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     
-     <footer>
+      <footer>
+      <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
   <p>Leanne Cassidy - 114370601</p>
 </footer> 
 </body>

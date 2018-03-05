@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	
-	<title>What are you interested in? Quiz Results</title>
+	<title>Quiz Results</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -59,7 +59,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Discover</a>
+					<a href="index.html"><img src="../images/Discov (6).png" alt="Homepage" height="75" width="200"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -219,5 +219,11 @@
   ga('create', 'UA-000000000-1', 'auto');
   ga('send', 'pageview');
 </script>
+</br>
+</br>
+<footer>
+      <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
+  <p>Leanne Cassidy - 114370601</p>
+</footer> 
 </body>
 </html>

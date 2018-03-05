@@ -10,13 +10,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
-<title>Welcome to Discover</title>
+<title>Register/Login</title>
+<link rel="icon" href="../images/college.png">
 <meta name="author" content="Jake Rocheleau">
-  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+ 
   <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  
-  <!-- Nav bar -->
+   <link rel="icon" href="../images/college.png">
+    <!-- Nav bar -->
      <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +55,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Discover</a>
+				<img src="../images/Discov (6).png" alt="Homepage" height="75" width="200">
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -65,7 +66,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="inc/signup.php">
+							<a href="signup.php">
 								<i class="fa fa-plus-square"></i> <span>Register/Login</span>
 							</a>
 						</li>
@@ -142,8 +143,12 @@
 			  </label>
 			</div>
 			</div>
+			</br>
+			</br>
               <button name="signup" type="submit" class="btn btn-success">Register</button>
+              </br>
             </form>
+            </br>
           </div>
         </div>
       </div>
@@ -177,7 +182,7 @@
             
           </div>
         </div>
-        
+
       </div>
     </div>
     </br>

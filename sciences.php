@@ -14,7 +14,7 @@ require_once 'inc/db.php';
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-   <link rel="icon" href="images/college.png">
+    <link rel="icon" href="images/college.png">
    
     <!-- Nav bar -->
      <meta charset="utf-8">
@@ -42,6 +42,14 @@ require_once 'inc/db.php';
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        
+         <style>
+       body { 
+           background-image: url("images/capture1.png");
+           background-size: cover;
+       }
+       
+   </style>
 </head>
 <body>
 
@@ -56,7 +64,7 @@ require_once 'inc/db.php';
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Discover</a>
+						<a href="index.html"><img src="../images/Discov (6).png" alt="Homepage" height="75" width="200"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -95,18 +103,15 @@ require_once 'inc/db.php';
 				</div>
 			</div>
 		</nav>
-
-
-     
-<h2>
-    Below are a number of different science courses offered in UCC.</br>
-    Click on the name to be redirected to that course on the UCC Website.
-</h2>
 </br>
 </br>
-</br>
+     </br>
 
- 
+    <h2>Below are a number of different science courses offered in UCC.</h2>
+    <h3>Click on the name to be redirected to that course on the UCC Website.</h3>
+
+ <div id="w">
+    <div id="content" class="clearfix">
    <center><p><a href="https://www.ucc.ie/en/bees/">Biological, Earth & Enviornmental Sciences</a></p>
    <p><a href="https://www.ucc.ie/en/ck402/">Biological & Chemical Sciences</a></p>
      <p><a href="https://www.ucc.ie/en/compsci/">Computer Science</a></p>
@@ -120,8 +125,13 @@ require_once 'inc/db.php';
 
 
     <p><a href="https://www.ucc.ie/en/#">Or search through other options on UCC here</a></p></center>
-   
-  
+   </br>
+   </div>
+   </div>
+  <footer>
+      <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
+  <p>Leanne Cassidy - 114370601</p>
+</footer> 
   
   
  
