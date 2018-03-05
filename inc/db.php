@@ -15,26 +15,26 @@
 	$db = 'heroku_211cf847743074';
 
 //Retrieving vaules POSTed
-	$name = $_POST['name'];
-		$email = $_POST['email'];
-		$password = $_POST['password'];
-		$rpassword = $_POST['rpassword'];
-		$bio = $_POST['bio'];
-		$interest = $_POST['interest'];
-		$type = $_POST['type'];
+	// $name = $_POST['name'];
+	// 	$email = $_POST['email'];
+	// 	$password = $_POST['password'];
+	// 	$rpassword = $_POST['rpassword'];
+	// 	$bio = $_POST['bio'];
+	// 	$interest = $_POST['interest'];
+	// 	$type = $_POST['type'];
 
 //Db connection
 	$conn = mysqli_connect($server,$username,$password,$db);
 	$conn->set_charset('utf8');
 
 //SQL Query using the fetched values
-$sql = "INSERT INTO users (name, email, password, bio, interest, type) VALUES ('$name', '$email', '$password', '$bio', '$interest', '$type')";
+// $sql = "INSERT INTO users (name, email, password, bio, interest, type) VALUES ('$name', '$email', '$password', '$bio', '$interest', '$type')";
 
-if ($conn->query($sql) === TRUE){
-	echo "New record created successfully";
-}else{
-	echo "Error: " . $sql . "<br>" . $conn->error;
-}
+// if ($conn->query($sql) === TRUE){
+// 	echo "New record created successfully";
+// }else{
+// 	echo "Error: " . $sql . "<br>" . $conn->error;
+// }
 
-$conn->close();
+// $conn->close();
  ?>

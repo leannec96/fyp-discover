@@ -185,3 +185,57 @@
 [01-Mar-2018 23:20:35 UTC] PHP Fatal error:  require_once(): Failed opening required 'inc/db.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/glint/studenthome.php on line 4
 [01-Mar-2018 23:20:35 UTC] PHP Stack trace:
 [01-Mar-2018 23:20:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/glint/studenthome.php:0
+[05-Mar-2018 14:51:16 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'b7334920bc5bdf'@'ip-10-0-122-115.eu-west-1.compute.internal' (using password: YES) in /home/ubuntu/workspace/inc/db.php on line 27
+[05-Mar-2018 14:51:17 UTC] PHP Stack trace:
+[05-Mar-2018 14:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:51:17 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:51:17 UTC] PHP   3. mysqli_connect() /home/ubuntu/workspace/inc/db.php:27
+[05-Mar-2018 14:51:17 UTC] PHP Fatal error:  Call to a member function set_charset() on a non-object in /home/ubuntu/workspace/inc/db.php on line 28
+[05-Mar-2018 14:51:17 UTC] PHP Stack trace:
+[05-Mar-2018 14:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:51:17 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:51:33 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/ubuntu/workspace/inc/db.php on line 27
+[05-Mar-2018 14:51:33 UTC] PHP Stack trace:
+[05-Mar-2018 14:51:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:51:33 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:51:33 UTC] PHP   3. mysqli_connect() /home/ubuntu/workspace/inc/db.php:27
+[05-Mar-2018 14:51:33 UTC] PHP Fatal error:  Call to a member function set_charset() on a non-object in /home/ubuntu/workspace/inc/db.php on line 28
+[05-Mar-2018 14:51:33 UTC] PHP Stack trace:
+[05-Mar-2018 14:51:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:51:33 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:51:56 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/ubuntu/workspace/inc/db.php on line 27
+[05-Mar-2018 14:51:56 UTC] PHP Stack trace:
+[05-Mar-2018 14:51:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:51:56 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:51:56 UTC] PHP   3. mysqli_connect() /home/ubuntu/workspace/inc/db.php:27
+[05-Mar-2018 14:51:56 UTC] PHP Fatal error:  Call to a member function set_charset() on a non-object in /home/ubuntu/workspace/inc/db.php on line 28
+[05-Mar-2018 14:51:56 UTC] PHP Stack trace:
+[05-Mar-2018 14:51:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:51:56 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:52:25 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'leannecassidy96'@'localhost' (using password: YES) in /home/ubuntu/workspace/inc/db.php on line 27
+[05-Mar-2018 14:52:25 UTC] PHP Stack trace:
+[05-Mar-2018 14:52:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:52:25 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:52:25 UTC] PHP   3. mysqli_connect() /home/ubuntu/workspace/inc/db.php:27
+[05-Mar-2018 14:52:25 UTC] PHP Fatal error:  Call to a member function set_charset() on a non-object in /home/ubuntu/workspace/inc/db.php on line 28
+[05-Mar-2018 14:52:25 UTC] PHP Stack trace:
+[05-Mar-2018 14:52:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:52:25 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 14:53:02 UTC] PHP Warning:  include(../inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/accounts/login.php on line 5
+[05-Mar-2018 14:53:02 UTC] PHP Stack trace:
+[05-Mar-2018 14:53:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:53:02 UTC] PHP Warning:  include(): Failed opening '../inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/accounts/login.php on line 5
+[05-Mar-2018 14:53:02 UTC] PHP Stack trace:
+[05-Mar-2018 14:53:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 14:53:02 UTC] PHP Fatal error:  Call to undefined function p_s() in /home/ubuntu/workspace/accounts/login.php on line 8
+[05-Mar-2018 14:53:02 UTC] PHP Stack trace:
+[05-Mar-2018 14:53:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 15:39:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'b7334920bc5bdf'@'%' to database 'heroku_211cf847743074' in /home/ubuntu/workspace/inc/db.php on line 27
+[05-Mar-2018 15:39:49 UTC] PHP Stack trace:
+[05-Mar-2018 15:39:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 15:39:49 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4
+[05-Mar-2018 15:39:49 UTC] PHP   3. mysqli_connect() /home/ubuntu/workspace/inc/db.php:27
+[05-Mar-2018 15:39:49 UTC] PHP Fatal error:  Call to a member function set_charset() on a non-object in /home/ubuntu/workspace/inc/db.php on line 28
+[05-Mar-2018 15:39:49 UTC] PHP Stack trace:
+[05-Mar-2018 15:39:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/accounts/login.php:0
+[05-Mar-2018 15:39:49 UTC] PHP   2. include() /home/ubuntu/workspace/accounts/login.php:4

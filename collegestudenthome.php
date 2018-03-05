@@ -48,7 +48,7 @@ require_once 'inc/db.php';
            background-image: url("images/capture1.png");
            background-size: cover;
        }
-       
+      
    </style>
 </head>
 <body>
@@ -123,7 +123,7 @@ require_once 'inc/db.php';
     </div><!-- @end #content -->
   </div><!-- @end #w -->
   
-   <footer>
+   <footer class="site-footer">
       <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
   <p>Leanne Cassidy - 114370601</p>
 </footer> 

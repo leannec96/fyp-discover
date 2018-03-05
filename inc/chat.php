@@ -8,6 +8,7 @@
 			$sql = "INSERT INTO conv_reply (conv_id,user_id,content) VALUES('$conv_id','$fromuser','$msg')";
 			if (mysqli_query($conn,$sql)) {
 				header('Location: chat.php?id='.$touser);
+				
 			}
 		}
 	}
