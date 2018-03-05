@@ -91,37 +91,37 @@ require_once 'inc/db.php';
 		</nav>
      
   
-  <div id="w">
-    <div id="content" class="clearfix">
-      <div id="userphoto"><img src="images/college.png" width="120" height="120" alt="default avatar"></div>
-      <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
+  <!--<div id="w">-->
+  <!--  <div id="content" class="clearfix">-->
+  <!--    <div id="userphoto"><img src="images/college.png" width="120" height="120" alt="default avatar"></div>-->
+  <!--    <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>-->
 
-      <nav id="profiletabs">
-        <ul class="clearfix">
-          <li><a href="#settings" class="sel">My Details</a></li>
-        </ul
+  <!--    <nav id="profiletabs">-->
+  <!--      <ul class="clearfix">-->
+  <!--        <li><a href="#settings" class="sel">My Details</a></li>-->
+  <!--      </ul-->
   
       
       
-      <section id="settings">
-        <p>Edit your user settings:</p>
+  <!--    <section id="settings">-->
+  <!--      <p>Edit your user settings:</p>-->
         
-       <p class="setting"><span>E-mail Address</span><?php echo $_SESSION["email"]; ?></p>
+  <!--     <p class="setting"><span>E-mail Address</span><?php echo $_SESSION["email"]; ?></p>-->
         
-        <p class="setting"><span>Bio <img src="images/edit.png"></span><?php echo $_SESSION["bio"]; ?></p>
+  <!--      <p class="setting"><span>Bio <img src="images/edit.png"></span><?php echo $_SESSION["bio"]; ?></p>-->
         
-        <p class="setting"><span>Interest <img src="images/edit.png"></span><?php echo $_SESSION["interest"]; ?></p>
+  <!--      <p class="setting"><span>Interest <img src="images/edit.png"></span><?php echo $_SESSION["interest"]; ?></p>-->
         
-         <p class="setting"><span>Type of student <img src="images/edit.png"></span><?php echo $_SESSION["type"]; ?></p>
+  <!--       <p class="setting"><span>Type of student <img src="images/edit.png"></span><?php echo $_SESSION["type"]; ?></p>-->
         
-        <p class="setting"><span>Language <img src="images/edit.png"></span> English</p>
+  <!--      <p class="setting"><span>Language <img src="images/edit.png"></span> English</p>-->
         
-        <p class="setting"><span>Profile Status <img src="images/edit.png"></span> Active</p>
+  <!--      <p class="setting"><span>Profile Status <img src="images/edit.png"></span> Active</p>-->
      
-      </section>
+  <!--    </section>-->
             
-    </div><!-- @end #content -->
-  </div><!-- @end #w -->
+  <!--  </div><!-- @end #content -->-->
+  <!--</div><!-- @end #w -->-->
   
    <footer class="site-footer">
       <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
