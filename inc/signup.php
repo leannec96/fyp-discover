@@ -88,7 +88,7 @@
             <h4>Register</h4>
           </div>
           <div class="panel-body">
-            <form action="../accounts/signup.php" method="POST">
+            <form action="../accounts/accountssignup.php" method="POST">
               <div class="form-group">
                 <label for="fullname">Full Name</label>
                 <input name="name" type="text" class="form-control" id="fullname" placeholder="Enter your FullName" required>
@@ -167,7 +167,7 @@
             <h4>Login</h4>
           </div>
           <div class="panel-body" >
-            <form action="../accounts/login.php" method="POST">
+            <form action="../accounts/accountslogin.php" method="POST">
               
               <div class="form-group">
                 <label for="email">Email address</label>
