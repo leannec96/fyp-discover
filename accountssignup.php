@@ -22,13 +22,13 @@
 
 				$sql = "INSERT INTO users (name, email, password, bio, interest, type, status, created_at) VALUES ('$name', '$email', '$password', '$bio', '$interest', '$type', 'approved', '$created_at')";
 				if (mysqli_query($conn, $sql)) {
-					header('Location: /inc/signup.php?suc');exit();
+					header('Location: ../inc/signup.php?suc');exit();
 				}
 			}else{
-				header('Location: /inc/signup.php?fidpass');exit();
+				header('Location: ../inc/signup.php?fidpass');exit();
 			}
 		}else{
-			header('Location: /inc/signup.php?fempt');exit();
+			header('Location: ../inc/signup.php?fempt');exit();
 		}
 
 
