@@ -50,6 +50,8 @@ require_once 'inc/db.php';
        }
        
    </style>
+    <script src="assets/jquery-1.11.3-jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </head>
 <body>
 </br>
@@ -163,8 +165,7 @@ $(function(){
   });
 });
 </script>
-    <script src="assets/jquery-1.11.3-jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+   
     
 </body>
 </html>

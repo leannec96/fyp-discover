@@ -1,5 +1,5 @@
 <?php
- ob_start();
+//  ob_start();
  session_start();
 require_once 'inc/db.php';
  
@@ -153,6 +153,8 @@ $(function(){
     
 </body>
 </html>
-<?php ob_end_flush(); ?>
+<?php 
+// ob_end_flush(); 
+?>
 
 
