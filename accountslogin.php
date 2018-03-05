@@ -1,8 +1,8 @@
 <?php 
   session_start();
 
-  include '../inc/db.php';
-  include '../inc/functions.php';
+  include 'inc/db.php';
+  include 'inc/functions.php';
   $json = [];
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = p_s($_POST['email']);
@@ -33,18 +33,18 @@
 		    		$_SESSION['interest']= $rows['interest'];
 		    		$_SESSION['type']= $rows['type'];
 		    	if($rows['type'] =='college'){
-		    	  header('Location: ../collegestudenthome.php?logged');exit();
+		    	  header('Location: collegestudenthome.php?logged');exit();
 		    	}else{
-		    	  header('Location: ../studenthome.php?logged');exit();
+		    	  header('Location: studenthome.php?logged');exit();
 		    	}
 		    	}
         }else{
-        	header('Location: ../inc/signup.php?er1');exit();
+        	header('Location: inc/signup.php?er1');exit();
         }
       }else{
-      	header('Location: ../inc/signup.php?er2');exit();
+      	header('Location: inc/signup.php?er2');exit();
       }
     }else{
-    	header('Location: ../inc/signup.php?er3');exit();
+    	header('Location: inc/signup.php?er3');exit();
     }
   }
