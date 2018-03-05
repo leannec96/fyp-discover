@@ -10,9 +10,9 @@
 	
  //for heroku
 		$server = 'eu-cdbr-west-02.cleardb.net';
-	$username= 'b63ef7fd9df32c';
-	$password='2e792dbb';
-	$db = 'heroku_42aad86fb486075';
+	$username= 'b7334920bc5bdf';
+	$password='08211322';
+	$db = 'heroku_211cf847743074';
 
 //Retrieving vaules POSTed
 	$name = $_POST['name'];
