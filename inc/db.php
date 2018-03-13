@@ -2,17 +2,17 @@
 
 
 // for c9
-	$server = 'localhost';
-	$username= 'root';
-	$password='';
-	$db = 'chatapp';
+	// $server = 'localhost';
+	// $username= 'root';
+	// $password='';
+	// $db = 'chatapp';
 	
 	
  ////for heroku
-	// 	$server = 'eu-cdbr-west-02.cleardb.net';
-	// $username= 'b7334920bc5bdf';
-	// $password='08211322';
-	// $db = 'heroku_211cf847743074f';
+		$server = 'eu-cdbr-west-02.cleardb.net';
+	$username= 'b7334920bc5bdf';
+	$password='08211322';
+	$db = 'heroku_211cf847743074f';
 
 //Retrieving vaules POSTed
 	// $name = $_POST['name'];
