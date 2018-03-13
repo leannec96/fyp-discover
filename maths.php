@@ -32,7 +32,7 @@
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-       
+    
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -40,7 +40,8 @@
 </head>
 <body>
 
-<!-- Top menu -->
+
+ <!-- Top menu -->
 		<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -116,7 +117,7 @@
 
         function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: new google.maps.LatLng(51.894327, -8.489428),
+          center: new google.maps.LatLng(51.893475, -8.499595),
           zoom: 18
         });
         var infoWindow = new google.maps.InfoWindow;

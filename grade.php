@@ -1,3 +1,7 @@
+<?php 
+session_start();
+require_once 'inc/db.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +15,8 @@
    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-   <link rel="icon" href="images/college.png">
+     <link rel="icon" href="images/college.png">
+  
      
        <!-- Nav bar -->
      <meta charset="utf-8">
@@ -34,7 +39,7 @@
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
+       
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -43,7 +48,9 @@
        body { 
            background-image: url("images/capture1.png");
            background-size: cover;
-       }
+       }    
+     
+     
        
    </style>
 </head>
@@ -168,8 +175,9 @@
 
 </br>
 </br>
+ 
             <center><div class="results-overlay">
-            	
+         
             <?php 
             /**
              * Now we compare our outcome variables.
@@ -179,22 +187,23 @@
 
             <?php
             if ($totalA > $totalB && $totalA > $totalC && $totalA > $totalD) {
-                  echo '<div class="quiz-overlay result priest"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Health</p><p>You should select Health from the box and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result priest"></div><div class="results-text"><p class="you-chose">Your interest is:</p><div class="results test-results2"><p class="score">Health</p><p>You should select Health from the list and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../searchdb.php">Chat to someone</a></div>';
             }
             elseif ($totalB > $totalA && $totalB > $totalC && $totalB > $totalD) {
-                  echo '<div class="quiz-overlay result megadeth"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Business</p><p>You should select Business from the box and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result megadeth"></div><div class="results-text"><p class="you-chose">Your interest is:</p><div class="results test-results2"><p class="score">Business</p><p>You should select Business from the list and chat to someone in that department! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again?</a><a id="replay" class="take-quiz-btn" href="../searchdb.php">Chat to someone</a></div>';
             }
             elseif ($totalC > $totalA && $totalC > $totalB && $totalC > $totalD) {
-                  echo '<div class="quiz-overlay result maiden"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">English & History</p><p>You should select English or History from the box and chat to someone in those departments! Good Luck!<p></p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result maiden"></div><div class="results-text"><p class="you-chose">Your interest is:</p><div class="results test-results2"><p class="score">English & History</p><p>You should select English or History from the list and chat to someone in those departments! Good Luck!<p></p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../searchdb.php">Chat to someone</a></div>';
             }
             elseif ($totalD > $totalA && $totalD > $totalB && $totalD > $totalC) {
-                  echo '<div class="quiz-overlay result dio"></div><div class="results-text"><p class="you-chose">You Scored:</p><div class="results test-results2"><p class="score">Computers, Maths & Science</p><p>You should select Computers, maths or science from the box and chat to someone in those departments! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../studenthome.php">Home</a></div>';
+                  echo '<div class="quiz-overlay result dio"></div><div class="results-text"><p class="you-chose">Your interest is:</p><div class="results test-results2"><p class="score">Computers, Maths & Science</p><p>You should select Computers, maths or science from the list and chat to someone in those departments! Good Luck!</p><a id="replay" class="take-quiz-btn" href="test2.php">Try Again</a><a id="replay" class="take-quiz-btn" href="../searchdb.php">Chat to someone</a></div>';
             }
             
         ?>     
                 </div>
             </div>
 	</div>
+
 	</center>
   
   <script type="text/javascript">
@@ -221,7 +230,7 @@
 </script>
 </br>
 </br>
-<footer>
+<footer class="site-footer">
       <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
   <p>Leanne Cassidy - 114370601</p>
 </footer> 

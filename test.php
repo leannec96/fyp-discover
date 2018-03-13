@@ -40,7 +40,7 @@ require_once 'inc/db.php';
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
+    
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -50,7 +50,7 @@ require_once 'inc/db.php';
            background-image: url("images/capture1.png");
            background-size: cover;
        }
-       
+      
    </style>
 </head>
 
@@ -131,8 +131,9 @@ require_once 'inc/db.php';
 	         */
             ?> 
             
-             <div id="w">
+              <div id="w">
     <div id="content" class="clearfix">
+      <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
             <ul id="test-questions">
                
                 <li>
@@ -319,7 +320,7 @@ require_once 'inc/db.php';
 </br>
 </br>
 </br>
-  <footer>
+  <footer class="site-footer">
       <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
   <p>Leanne Cassidy - 114370601</p>
 </footer> 

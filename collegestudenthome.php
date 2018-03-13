@@ -15,7 +15,7 @@ require_once 'inc/db.php';
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <link rel="icon" href="images/college.png">
+   <link rel="shortcut icon" href="../images/college.png" type="image/x-icon">
   
   <!-- Nav bar -->
      <meta charset="utf-8">
@@ -38,7 +38,7 @@ require_once 'inc/db.php';
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
+       
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -48,7 +48,15 @@ require_once 'inc/db.php';
            background-image: url("images/capture1.png");
            background-size: cover;
        }
-      
+
+  .left {
+    float: left;
+    font-size: 20px;
+}
+.right {
+    float: right;
+    font-size: 20px;
+}  
    </style>
 </head>
 <body>
@@ -91,37 +99,36 @@ require_once 'inc/db.php';
 		</nav>
      
   
-  <!--<div id="w">-->
-  <!--  <div id="content" class="clearfix">-->
-  <!--    <div id="userphoto"><img src="images/college.png" width="120" height="120" alt="default avatar"></div>-->
-  <!--    <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>-->
+   <div id="w">
+    <div id="content" class="clearfix">
+      <div id="userphoto"><img src="images/college.png" width="120" height="120" alt="default avatar"></div>
+      <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
 
-  <!--    <nav id="profiletabs">-->
-  <!--      <ul class="clearfix">-->
-  <!--        <li><a href="#settings" class="sel">My Details</a></li>-->
-  <!--      </ul-->
+      <nav id="profiletabs" />
+        <ul class="clearfix">
+          <li><a href="#settings" class="sel">My Details</a></li>
+        </ul>
+      
   
-      
-      
-  <!--    <section id="settings">-->
-  <!--      <p>Edit your user settings:</p>-->
+      <h3><u> Edit your user profile:</u></h3>
+      </br>
+       
+        <p><div class="left">Email Address:</div><div class="right"><?php echo $_SESSION["email"]; ?></p></div> </br>
         
-  <!--     <p class="setting"><span>E-mail Address</span><?php echo $_SESSION["email"]; ?></p>-->
+        <p><div class="left">Bio <img src="images/edit.png"></div><div class="right"><?php echo $_SESSION["bio"]; ?></p></div></br>
         
-  <!--      <p class="setting"><span>Bio <img src="images/edit.png"></span><?php echo $_SESSION["bio"]; ?></p>-->
+        <p><div class="left">Interest <img src="images/edit.png"></div><div class="right"><?php echo $_SESSION["interest"]; ?></p></div></br>
         
-  <!--      <p class="setting"><span>Interest <img src="images/edit.png"></span><?php echo $_SESSION["interest"]; ?></p>-->
+        <p><div class="left">Type of student <img src="images/edit.png"></div><div class="right"><?php echo $_SESSION["type"]; ?></p></div></br>
         
-  <!--       <p class="setting"><span>Type of student <img src="images/edit.png"></span><?php echo $_SESSION["type"]; ?></p>-->
+        <p><div class="left">Language <img src="images/edit.png"></div><div class="right">English</p></div></br>
         
-  <!--      <p class="setting"><span>Language <img src="images/edit.png"></span> English</p>-->
-        
-  <!--      <p class="setting"><span>Profile Status <img src="images/edit.png"></span> Active</p>-->
+        <p><div class="left">Profile Status <img src="images/edit.png"></div><div class="right"> Active</p></div>
      
-  <!--    </section>-->
-            
-  <!--  </div><!-- @end #content -->-->
-  <!--</div><!-- @end #w -->-->
+     
+      </div><!-- @end #content -->
+  </div><!-- @end #w -->
+  
   
    <footer class="site-footer">
       <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>

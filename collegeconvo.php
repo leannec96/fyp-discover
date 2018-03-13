@@ -91,9 +91,12 @@ require_once 'inc/db.php';
 			</div>
 		</nav>
      
-  
+    <div id="w">
+            <div id="content" class="clearfix">
+      <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
 <center><h3> Your conversation history will appear here if you have spoken to someone</h3></center>
-
+</div>
+</div>
 </br>
 
 <?php

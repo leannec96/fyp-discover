@@ -91,7 +91,7 @@
             <form action="../accounts/signup.php" method="POST">
               <div class="form-group">
                 <label for="fullname">Full Name</label>
-                <input name="name" type="text" class="form-control" id="fullname" placeholder="Enter your FullName" required>
+                <input name="name" type="text" class="form-control" id="fullname" placeholder="Enter your Full Name" required>
               </div>
               <div class="form-group">
                 <label for="email">Email address</label>
@@ -107,7 +107,7 @@
               </div>
               <div class="form-group">
                 <label for="bio">Bio</label>
-                <input name="bio" type="text" class="form-control" id="bio" placeholder="Enter your Bio" required>
+                <input name="bio" type="text" class="form-control" id="bio" placeholder="What year you're in. What you are studying/what your interest is." required>
               </div>
 <div class="form-group">
    <label for="interest">Interest</label>

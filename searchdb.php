@@ -11,7 +11,7 @@ require_once 'inc/db.php';
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
-<title>Student Profile</title>
+<title>Search & Chat</title>
 <meta name="author" content="Jake Rocheleau">
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
@@ -39,7 +39,7 @@ require_once 'inc/db.php';
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -49,6 +49,7 @@ require_once 'inc/db.php';
            background-image: url("images/capture1.png");
            background-size: cover;
        }
+  
        
    </style>
 </head>
@@ -109,7 +110,11 @@ require_once 'inc/db.php';
   
         <div id="w">
             <div id="content" class="clearfix">
+                
+      <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
+      
                 </br>
+                <div class="alert alert-info">You have to Select an Interest and the Type of Student you would like to talk to to See Results!</div>
                 <form action="" method="get" style="margin-bottom:45px;">
                     <select name="usr_interest" class="form-control" style="margin-bottom:25px;" required>
                         <option disabled>Select an interest</option>
@@ -141,14 +146,14 @@ require_once 'inc/db.php';
                 <p>Not sure of what your interest is? Click
                     <a href="test.php">here </a>to take a quiz to discover some interests!</span>
                 </p>
-                <?php if(isset($_GET['usr_interest']) && isset($_GET['usr_type'])){ ?>
+               
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col">Interest</th>
                             <th scope="col">Click on a Student Name to Chat to them</th>
                             <th scope="col">Type of Student</th>
-                            <th scope="col">View Student on Map of UCC</th>
+                            <th scope="col">View College Student on Map of UCC</th>
                             <th scope="col">View interest on UCC Website</th>
                         </tr>
                     </thead>
@@ -195,15 +200,15 @@ require_once 'inc/db.php';
                         ?>
                     </tbody>
                 </table>
-                <?php }else{echo '<div class="alert alert-info">You have to Select an Interest and Type of Student to See Results!</div>';}?>
-
+                
                 </form>
             </div>
         </div>
         </script>
         </br>
         </br>
-         <footer>
+      
+         <footer class="site-footer">
       <img src="../images/dlogo.png" alt="Homepage" height="75" width="200"> </br>
   <p>Leanne Cassidy - 114370601</p>
 </footer> 

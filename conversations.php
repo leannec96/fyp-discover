@@ -9,7 +9,7 @@ require_once 'inc/db.php';
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
-<title>Student Profile</title>
+<title>Conversation History</title>
 <meta name="author" content="Jake Rocheleau">
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <!--<link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">-->
@@ -37,7 +37,7 @@ require_once 'inc/db.php';
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
+
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -103,13 +103,17 @@ require_once 'inc/db.php';
 				</div>
 			</div>
 		</nav>
-     
+     <div id="w">
+            <div id="content" class="clearfix">
+      <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
+      
   
 <center><h3> Your conversation history will appear here if you have spoken to someone</h3>
 <p>Haven't spoken to anyone yet? Click <a href="searchdb.php"> here</a> to find someone you share similar interests with!</p></center>
 
 </br>
-
+</div>
+</div>
 <?php
 
   include 'init.php';
@@ -150,6 +154,7 @@ while ($rows= mysqli_fetch_assoc($run)) {
 
 return $msgs;
 ?> 
+
  <script src="assets/jquery-1.11.3-jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     </body>

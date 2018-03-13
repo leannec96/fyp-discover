@@ -131,10 +131,10 @@ require_once 'inc/db.php';
 	         */
             ?> 
             
-             <div id="w">
+            <div id="w">
     <div id="content" class="clearfix">
+      <h1><?php echo $_SESSION["name"]; ?> - <?php echo $_SESSION["type"]; ?></h1>
             <ul id="test-questions">
-               
                 <li>
                     
                     <div class="quiz-overlay"></div>
